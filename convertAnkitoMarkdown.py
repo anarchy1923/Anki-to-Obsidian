@@ -4,8 +4,10 @@ from markdownify import markdownify as md
 import frontmatter
 
 # Define the base directory where your Anki JSON exports are located
-base_dir = '/media/manansharma/583a4f1d-8c93-4f7c-83cc-719f228369bf/Anki-notes-export/anarchy1923-anki'
-output_dir = '/media/manansharma/583a4f1d-8c93-4f7c-83cc-719f228369bf/Anki-notes-export/anarchy1923-ankitoobsidian'
+base_dir = 'path/to/your/crowankisnapshot/folder'
+# Example:(I'm running Linux, hence the '/', and not '\' base_dir = '/media/manansharma/583a4f1d-8c93-4f7c-83cc-719f228369bf/Anki-notes-export/anarchy1923-anki'
+output_dir = 'path/to/your/obsidian/vault' #folder that will constitute your vault
+# Example: output_dir= '/media/manansharma/583a4f1d-8c93-4f7c-83cc-719f228369bf/Anki-notes-export/anarchy1923-ankitoobsidian'
 
 # Ensure the output directory exists
 os.makedirs(output_dir, exist_ok=True)
